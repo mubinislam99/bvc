@@ -14,15 +14,15 @@ export default function App() {
   const facebookUrl = "https://www.facebook.com/share/1AyZatHuVw/";
 
   return (
-    <div className="min-h-screen bg-[#0a0c14] text-slate-200 font-sans selection:bg-indigo-500/30">
+    <div className="min-h-screen bg-[#020617] text-slate-200 font-sans selection:bg-emerald-500/30">
       {/* Navigation - Minimal */}
-      <nav className="fixed top-0 w-full z-50 bg-[#0a0c14]/80 backdrop-blur-md border-b border-slate-800/50">
+      <nav className="fixed top-0 w-full z-50 bg-[#020617]/80 backdrop-blur-md border-b border-slate-800/50">
         <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
           <span className="text-xl font-bold tracking-tight text-white font-display">{domain}</span>
           <div className="hidden sm:flex gap-8 text-sm font-medium text-slate-400">
-            <a href="#about" className="hover:text-indigo-400 transition-colors">About</a>
-            <a href="#skills" className="hover:text-indigo-400 transition-colors">Skills</a>
-            <a href="#contact" className="hover:text-indigo-400 transition-colors">Contact</a>
+            <a href="#about" className="hover:text-emerald-400 transition-colors">About</a>
+            <a href="#skills" className="hover:text-emerald-400 transition-colors">Skills</a>
+            <a href="#contact" className="hover:text-emerald-400 transition-colors">Contact</a>
           </div>
         </div>
       </nav>
@@ -34,7 +34,7 @@ export default function App() {
             <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6 font-display">
               {name}
             </h1>
-            <p className="text-xl md:text-2xl text-indigo-400 font-medium mb-8">
+            <p className="text-xl md:text-2xl text-emerald-400 font-medium mb-8">
               {role} | Networking & ESP8266 Enthusiast
             </p>
             <p className="text-lg text-slate-400 leading-relaxed mb-10 max-w-2xl">
@@ -46,7 +46,7 @@ export default function App() {
             <div className="flex flex-wrap gap-4">
               <a 
                 href={`mailto:${email}`}
-                className="flex items-center gap-2 px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full font-semibold transition-all shadow-lg shadow-indigo-500/20"
+                className="flex items-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white rounded-full font-semibold transition-all shadow-lg shadow-emerald-500/20"
               >
                 <Mail size={18} />
                 Email Me
@@ -80,7 +80,7 @@ export default function App() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3 font-display">
-                <User className="text-indigo-400" />
+                <User className="text-emerald-400" />
                 About Me
               </h2>
               <div className="space-y-4 text-slate-400 leading-relaxed">
@@ -104,7 +104,7 @@ export default function App() {
               <h3 className="text-xl font-semibold text-white mb-6 font-display">Quick Info</h3>
               <div className="space-y-4">
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400">
+                  <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400">
                     <User size={20} />
                   </div>
                   <div>
@@ -113,7 +113,7 @@ export default function App() {
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400">
+                  <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400">
                     <GraduationCap size={20} />
                   </div>
                   <div>
@@ -122,7 +122,7 @@ export default function App() {
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400">
+                  <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400">
                     <Globe size={20} />
                   </div>
                   <div>
@@ -131,7 +131,7 @@ export default function App() {
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400">
+                  <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400">
                     <Mail size={20} />
                   </div>
                   <div>
@@ -158,8 +158,8 @@ export default function App() {
               { title: "NodeMCU / ESP8266", icon: <Cpu size={24} />, desc: "Building IoT projects and hardware prototypes." },
               { title: "Troubleshooting", icon: <Settings size={24} />, desc: "Practical, real-life technical problem solving." },
             ].map((skill, index) => (
-              <div key={index} className="p-6 rounded-2xl bg-slate-800/30 border border-slate-700/50 hover:border-indigo-500/50 transition-all group">
-                <div className="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-4 group-hover:scale-110 transition-transform">
+              <div key={index} className="p-6 rounded-2xl bg-slate-800/30 border border-slate-700/50 hover:border-emerald-500/50 transition-all group">
+                <div className="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-4 group-hover:scale-110 transition-transform">
                   {skill.icon}
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-2 font-display">{skill.title}</h3>
@@ -171,7 +171,7 @@ export default function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-6 bg-indigo-600/5">
+      <section id="contact" className="py-20 px-6 bg-emerald-600/5">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-6 font-display">Get In Touch</h2>
           <p className="text-slate-400 mb-10">
@@ -180,7 +180,7 @@ export default function App() {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a 
               href={`mailto:${email}`}
-              className="flex items-center justify-center gap-3 px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white rounded-2xl font-bold transition-all"
+              className="flex items-center justify-center gap-3 px-8 py-4 bg-emerald-600 hover:bg-emerald-500 text-white rounded-2xl font-bold transition-all"
             >
               <Mail size={20} />
               Send an Email
